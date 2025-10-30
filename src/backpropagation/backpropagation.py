@@ -85,7 +85,8 @@ def backpropagation_network(inputs: np.ndarray, perceptrons: int, layers: int) -
             perceptron_layer.append(p)
             layer_outputs.append(p.a)
         layers_list.append(perceptron_layer)
-        current_values = layer_outputs
+        current_values = layer_outputs 
+        
 
     # Capa de salida
     output_inputs = [InputData(x=v) for v in current_values]
